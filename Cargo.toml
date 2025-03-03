@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = ["crates/main", "crates/lobby"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+anyhow = "1.0"
+async-trait = "0.1"
+axum = "0.8"
+axum-extra = "0.10"
+serde = "1.0"
+serde_json = "1.0"
+tokio = "1.43"
+chrono = "0.4"
+uuid = "1.15"
+thiserror = "2.0"
+futures-util = "0.3"
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
+lobby = { path = "crates/lobby" }

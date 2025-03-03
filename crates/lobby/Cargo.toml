@@ -1,0 +1,18 @@
+[package]
+name = "lobby"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+async-trait = { workspace = true }
+axum = { workspace = true, features = ["tokio", "ws"] }
+axum-extra = { workspace = true, features = ["cookie"] }
+chrono = { workspace = true, features = ["serde"] }
+futures-util = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true, features = ["log", "async-await"] }
+uuid = { workspace = true, features = ["v4", "serde"] }
